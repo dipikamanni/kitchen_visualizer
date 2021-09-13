@@ -1,0 +1,295 @@
+*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			font-family: cursive;
+		}
+		button#go_back_first, button#go_back_second, button#go_back_third, button#go_back_fourth {
+			position: absolute;
+			top: 35px;
+			right: 45px;
+			padding: 15px 30px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			background: #000000;
+			color: #ffffff;
+			border: 0;
+			outline: none;
+			cursor: pointer;
+			transition: 1s ease;
+		}
+		/* PRELOADER CSS */
+		.page-loader {
+	    	width: 100%;
+		    height: 100vh;
+		    position: fixed;
+		    background: rgb(0 0 0 / 80%);
+		    z-index: 1000;
+		}
+		.page-loader .txt {
+		    color: #fff;
+		    text-align: center;
+		    top: 40%;
+		    position: relative;
+		    text-transform: uppercase;
+		    letter-spacing: 0.3rem;
+		    font-weight: bold;
+		    line-height: 1.5;
+		}
+		/* SPINNER ANIMATION */
+		.spinner {
+		  position: relative;
+		  top: 35%;
+		  width: 80px;
+		  height: 80px;
+		  margin: 0 auto;
+		  background-color: #fff;
+		  border-radius: 100%;
+		  -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+		  animation: sk-scaleout 1s infinite ease-in-out;
+		}
+		@-webkit-keyframes sk-scaleout {
+		  0% {
+		    -webkit-transform: scale(0);
+		  }
+		  100% {
+		    -webkit-transform: scale(1);
+		    opacity: 0;
+		  }
+		}
+		@keyframes sk-scaleout {
+		  0% {
+		    -webkit-transform: scale(0);
+		    transform: scale(0);
+		  }
+		  100% {
+		    -webkit-transform: scale(1);
+		    transform: scale(1);
+		    opacity: 0;
+		  }
+		}
+
+		div#first {
+		    display: flex;
+		    flex-direction: column;
+		    height: 100vh;
+		    align-items: center;
+		    justify-content: center;		    
+		}
+		h2 {
+		    width: 100%;
+		    text-align: center;
+		    font-size: 25px;
+		    font-family: cursive;
+		    color: #4a4a4a;
+		    letter-spacing: 1px;
+		    margin: 30px 0;
+		}
+		h1 {
+		    width: 100%;
+		    text-align: center;
+		    font-family: cursive;
+		    color: #4a4a4a;
+		    letter-spacing: 1px;
+		    margin-bottom: 20px;
+		    font-size: 30px;
+		}
+		div#first button {
+		    padding: 15px 30px;
+		    text-transform: uppercase;
+		    letter-spacing: 1px;
+		    background: #000000;
+		    color: #ffffff;
+		    border: 0;
+		    outline: none;
+		    cursor: pointer;
+		}
+		button#get_started:hover {
+		    background: #adadad;
+		}
+		div#first button {
+		    padding: 15px 30px;
+		    text-transform: uppercase;
+		    letter-spacing: 1px;
+		    background: #000000;
+		    color: #ffffff;
+		    border: 0;
+		    outline: none;
+		    cursor: pointer;
+		    transition: 1s ease;
+		}
+		div#second {
+		    display: flex;
+		    flex-wrap: wrap;
+		    align-items: center;
+		    justify-content: center;
+		}
+
+		div#second label {
+		    display: block;
+		    background: #adadad;
+		    padding: 30px 98px;
+		    margin: 10px;
+		    font-size: 300px;
+		    cursor: pointer;
+		    position: relative;
+		    line-height: 1;
+		}
+		span.text-part {
+		    position: absolute;
+		    font-size: 17px;
+		    letter-spacing: 1px;
+		    left: 0;
+		    bottom: -30px;
+		    font-weight: 600;
+		    
+		}
+		div#second label:hover {
+		    background: #797979;
+		}
+		.shape-image {
+		    display: flex;
+		    flex-wrap: wrap;
+		    align-items: center;
+		    justify-content: center;
+		}
+		.shape-image img:hover {
+		    transform: scale(1.1);
+		}
+		.shape-image img {
+		    width: 100%;
+		    padding: 10px;
+		    max-width: 30%;
+		    border: 1px solid #adadad;
+		    margin: 10px;
+		    box-shadow: 0 0 6px #888888;
+		    cursor: pointer;
+		    transition: 1s ease;
+		}
+		div#final-stage {
+		    display: flex;
+		}
+		.side_bar {
+		    display: flex;
+		    flex: 0 0 20%;
+		    background: #ffffff;
+		    border-right: 3px solid #000;
+		    height: 100vh;
+		}
+		.main_image_map {
+		    display: flex;
+		    flex: 0 0 79%;
+		    flex-direction: column;
+		    justify-content: center;
+		    align-items: center;
+		}
+		.main_image_map img {
+		    /*width: 80%;*/
+		}
+		.side_bar ul {
+		    display: block;
+		    width: 100%;
+		    padding: 0;
+		    list-style-type: none;
+		}
+
+		.side_bar ul li {
+		    padding: 20px;
+		    background: #e2e2e2;
+		    margin-bottom: 5px;
+		}
+		.side_bar ul li span.plus_add {
+		    padding: 20px 25px;
+		    display: inline-block;
+		    background: #c3c3c3;
+		    margin-right: 5px;
+		    font-size: 22px;
+		    font-weight: normal;
+		    cursor: pointer;
+		}
+		.side_bar h3 {
+		    margin: 35px 0;
+		    text-align: center;
+		    font-size: 16px;
+		    font-family: cursive;
+		}
+		.side_bar p {
+		    margin: 20px;
+		    cursor: pointer;
+		}
+		.exit-poup-code-wrap {
+		    top: 0px;
+		    width: 100%;
+		    height: 100vh;
+		    background: rgb(0 0 0 / 40%);
+		    z-index: 99999;
+		    position: fixed;
+		    align-items: center;
+		    justify-content: center;
+		    color: rgb(255, 255, 255);
+		    display: none;
+		}
+		.exit-poup-code-wrap-base-cabinet{
+			top: 0px;
+		    width: 100%;
+		    height: 100vh;
+		    background: rgb(0 0 0 / 40%);
+		    z-index: 99999;
+		    position: fixed;
+		    align-items: center;
+		    justify-content: center;
+		    color: rgb(255, 255, 255);
+		    display: none;
+		}
+		.exit-poup-code-wrap-counter-top{
+			top: 0px;
+		    width: 100%;
+		    height: 100vh;
+		    background: rgb(0 0 0 / 40%);
+		    z-index: 99999;
+		    position: fixed;
+		    align-items: center;
+		    justify-content: center;
+		    color: rgb(255, 255, 255);
+		    display: none;
+		}
+		.popup-content-area p {
+		    /* text-align: center; */
+		    font-size: 24px;
+		    color: #3c3c3c;
+		    font-weight: 200;
+		    padding: 0 20px;
+		}
+		.popup-content-area {
+		    width: 100%;
+		    max-width: 77%;
+		    margin: 12% auto 0;
+		    padding: 34px;
+		    background: #fff;
+		}
+		span.popup_exit_close {
+		    cursor: pointer;
+		    position: absolute;
+		    top: 0;
+		    right: 0;
+		    background: #ffffff;
+		    line-height: 0;
+		    padding: 22px;
+		    color: #000;
+		    font-weight: bold;
+		}
+		.popup-content-area img {
+			width: 100%;
+			max-width: 200px;
+			padding: 20px;
+			cursor: pointer;
+		}
+		.popup-content-area img {
+		    margin-top: 15px;
+		}
+		span.cab-counter-type {
+		    color: #ff0c0c;
+		    margin-left: 20px;
+		    position: absolute;
+		}
